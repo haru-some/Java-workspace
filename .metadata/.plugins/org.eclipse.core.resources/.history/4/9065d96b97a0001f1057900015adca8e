@@ -1,0 +1,21 @@
+package kh.java.func;
+
+public class WhileTest {
+	public void test1() {
+		//"안녕하세요" 5번 반복해서 출력
+		/*
+		 while(조건식){
+		 	조건식이 true면 실행되는 코드
+		 }
+		 */
+		int i=0;
+		while(i<5) {
+			System.out.println("안녕하세요");
+		}
+		/*
+		 for(int i=0;i<5;i++){
+		 	System.out.println("안녕하세요");
+		 }
+		 */
+	}
+}

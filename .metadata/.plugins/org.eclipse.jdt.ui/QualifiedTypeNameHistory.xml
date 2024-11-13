@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="kr.or.iei.vo.Information"/>
+    <fullyQualifiedTypeName name="kh.java.func.TestClass"/>
+    <fullyQualifiedTypeName name="kh.java.func.ScanTest"/>
+    <fullyQualifiedTypeName name="kh.java.function.Example"/>
+    <fullyQualifiedTypeName name="kh.java.practice.Sample"/>
+    <fullyQualifiedTypeName name="kh.java.func.VariableTest"/>
+    <fullyQualifiedTypeName name="kh.java.func.OperatorTest"/>
+    <fullyQualifiedTypeName name="kh.java.test.function.Example"/>
+    <fullyQualifiedTypeName name="kh.java.func.ifTest"/>
+    <fullyQualifiedTypeName name="kh.java.func.SwitchTest"/>
+    <fullyQualifiedTypeName name="kh.java.func.ForTest"/>
+    <fullyQualifiedTypeName name="kh.java.func.LoopTest"/>
+    <fullyQualifiedTypeName name="kh.java.func.RandomTest"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>

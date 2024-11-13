@@ -1,0 +1,15 @@
+package kh.java.practice;
+
+import java.util.Scanner;
+
+public class Sample {
+	public void sample1() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("문자 입력 : ");
+		String wordstr = sc.next();
+		char word = wordstr.charAt(0);
+		int word2 = (int)word;
+		System.out.printf("%c의 유니\t코드 값 : %d",word,word2);
+		
+	}
+}

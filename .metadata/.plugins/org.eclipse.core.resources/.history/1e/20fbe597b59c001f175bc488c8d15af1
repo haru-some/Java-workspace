@@ -1,0 +1,15 @@
+package kh.java.function;
+
+import java.util.Scanner;
+
+public class Example {
+	public void exam1() {
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		System.out.println("첫번 째 정수 입력 : "+num1);
+		int num2 = sc.nextInt();
+		System.out.println("두번 째 정수 입력 : "+num2);
+		System.out.println("========== 결과 ========== \n");
+	}
+
+}

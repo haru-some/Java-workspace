@@ -1,0 +1,13 @@
+package kh.java.practice;
+
+import java.util.Scanner;
+
+public class Sample {
+	public void sample1() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("문자 입력 : ");
+		String str = sc.nextLine();
+		//System.out.printf("%c의 유니코드 값 : \u",str);
+		
+	}
+}

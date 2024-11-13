@@ -1,0 +1,11 @@
+package kh.java.test.function;
+
+import java.util.Scanner;
+
+public class Example {
+	public void exam1() {
+		Scanner sc = new Scanner(System.in);
+		
+	}
+
+}

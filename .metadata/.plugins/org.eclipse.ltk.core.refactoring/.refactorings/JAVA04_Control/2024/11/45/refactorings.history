@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;kh.java.func.ifTest&apos; to &apos;IfTest&apos;&#x0D;&#x0A;- Original project: &apos;JAVA04_Control&apos;&#x0D;&#x0A;- Original element: &apos;kh.java.func.ifTest&apos;&#x0D;&#x0A;- Renamed element: &apos;kh.java.func.IfTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ifTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;kh.java.func{ifTest.java[ifTest" matchStrategy="1" name="IfTest" qualified="false" references="true" similarDeclarations="false" stamp="1731041544241" textual="false" version="1.0"/>
+</session>

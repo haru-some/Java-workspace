@@ -1,0 +1,8 @@
+package kh.java.test.function;
+
+public class Example {
+	public void sample1() {
+		
+	}
+
+}
