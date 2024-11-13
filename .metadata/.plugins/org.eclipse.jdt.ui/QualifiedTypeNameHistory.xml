@@ -14,6 +14,6 @@
     <fullyQualifiedTypeName name="kh.java.func.LoopTest"/>
     <fullyQualifiedTypeName name="kh.java.func.RandomTest"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -1,7 +1,0 @@
-package kh.java.func;
-
-public class RandomTest {
-	public void test1() {
-		
-	}
-}

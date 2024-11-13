@@ -287,8 +287,6 @@ public class RandomTest {
 		Scanner sc = new Scanner(System.in);
 		boolean power = true;
 		int count1 = 0;
-		int win = 0;
-		int lose = 0;
 		while (power) {
 			System.out.println("==== Baskin Robbins31 Game ====");
 			System.out.println("1. Game Start");
@@ -297,6 +295,8 @@ public class RandomTest {
 			System.out.print("선택 > ");
 			int select = sc.nextInt();
 			int num = 0;
+			int win = 0;
+			int lose = 0;
 			switch (select) {
 			case 1:
 				System.out.println("<< Game Start >>");
