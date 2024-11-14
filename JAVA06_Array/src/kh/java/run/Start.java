@@ -1,13 +1,12 @@
 package kh.java.run;
 
-import kh.java.func.RandomTest;
+import kh.java.func.ArrayTest;
 
 public class Start {
 
 	public static void main(String[] args) {
-		RandomTest rt = new RandomTest();
-		rt.br31();
-		
+		ArrayTest at = new ArrayTest();
+		at.exam3();
 	}
 
 }
