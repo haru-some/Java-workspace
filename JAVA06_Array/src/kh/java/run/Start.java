@@ -6,7 +6,7 @@ public class Start {
 
 	public static void main(String[] args) {
 		ArrayTest at = new ArrayTest();
-		at.exam3();
+		at.exam5();
 	}
 
 }

@@ -83,6 +83,7 @@ public class ArrayTest {
 		fruit[2] = "키위";
 		fruit[3] = "사과";
 		fruit[4] = "바나나";
+		//String[] fruit = {"딸기","복숭아","키위","사과","바나나"};
 		System.out.println("1-1");
 		System.out.println(fruit[4]);
 		System.out.println("1-2");
@@ -100,34 +101,136 @@ public class ArrayTest {
 		int[] num = new int[100];
 		for(int i=0;i<100;i++) {
 			num[i] = i+1;
-			System.out.println(num[i]);
+			System.out.println(i+"_"+num[i]);
 		}
 	}
 	public void exam3() {
 		int[] num = new int[4];
-		String[] str = new String[5];
+		String[] str = {"국어","영어","수학"};
 		Scanner sc = new Scanner(System.in);
-		System.out.print("국어점수 입력 : ");
-		int kor = sc.nextInt();
-		num[0] = kor;
-		str[0] = "국어 점수";
-		System.out.print("영어점수 입력 : ");
-		int eng = sc.nextInt();
-		num[1] = eng;
-		str[1] = "영어 점수";
-		System.out.print("수학점수 입력 : ");
-		int math = sc.nextInt();
-		num[2] = math;
-		str[2] = "수학 점수";
-		num[3] = kor+eng+math;
-		str[3] = "합계";
-		str[4] = "평균";
+		for(int i=0;i<3;i++) {
+			System.out.print(str[i]+" 점수 입력 : ");
+			num[i] = sc.nextInt();
+		}
+		num[3] = num[0]+num[1]+num[2];
+		System.out.println("국어점수 : "+num[0]);
+		System.out.println("영어점수 : "+num[1]);
+		System.out.println("수학점수 : "+num[2]);
+		System.out.println("합계 : "+num[3]);
+		System.out.printf("평균 : %.2f",num[3]/(double)3);
+		
+		/*
 		for(int i=0;i<4;i++) {
 			System.out.println(str[i]+" : "+num[i]);
 			if(i == 3) {
 				System.out.printf(str[4]+" : %.2f",num[i]/(double)i);
 			}
 		}
+		*/
+	}
+	public void exam4() {
+		Scanner sc = new Scanner(System.in);
+		//방을 관리할 배열 -> 방은 총 10개
+		//배열 내부의 데이터가 0이면 빈방 / 1이면 손님이 있는 방
+		int[] rooms = new int[10];//배열을 할당하면 기본값으로 세팅(정수 -> 0 -> 최초에 모두 빈 방 상태)
+		//boolean[] rooms = new boolean[10];//기본값 false, true 손님있는방
+		boolean power = true;
+		while(power) {
+			System.out.println("\n---------- 모텔 관리 프로그램 ----------\n");
+			System.out.println("1. 입실"); // 2
+			System.out.println("2. 퇴실"); // 3
+			System.out.println("3. 방보기"); // 1
+			System.out.println("4. 종료");
+			System.out.print("선택 >> ");
+			int select = sc.nextInt();
+			switch(select) {
+			case 1:
+				System.out.print("몇번방에 입실하시겠습니까? ");
+				int roomnum = sc.nextInt();
+				if(rooms[roomnum-1]==0) {
+					System.out.println(roomnum+"번방에 입실했습니다.");
+					rooms[roomnum-1] = 1;
+				}else if(rooms[roomnum-1]!=0) {
+					System.out.println(roomnum+"번방에는 손님이 있습니다.");
+				}
+				break;
+			case 2:
+				System.out.print("몇번방에서 퇴실하시겠습니까? ");
+				int roomnum2 = sc.nextInt();
+				if(rooms[roomnum2-1]==1) {
+					System.out.println(roomnum2+"번방에서 퇴실했습니다.");
+					rooms[roomnum2-1] = 0;
+				}else if(rooms[roomnum2-1]!=1) {
+					System.out.println(roomnum2+"번방은 빈방입니다.");
+				}
+				break;
+			case 3:
+				for(int i=0;i<10;i++) {
+					if(rooms[i]==0) {
+						System.out.println((i+1)+"번방은 빈방입니다.");
+					}else {
+						System.out.println((i+1)+"번방에는 손님이 있습니다.");
+					}
+				}
+				break;
+			case 4:
+				power = false;
+				break;
+			}
+			
+		}
+		
+		
+	}
+	public void exam5() {
+		Scanner sc = new Scanner(System.in);
+		boolean[] rooms = new boolean[10];
+		boolean power = true;
+		while(power) {
+			System.out.println("\n---------- 모텔 관리 프로그램 ----------\n");
+			System.out.println("1. 입실"); // 2
+			System.out.println("2. 퇴실"); // 3
+			System.out.println("3. 방보기"); // 1
+			System.out.println("4. 종료");
+			System.out.print("선택 >> ");
+			int select = sc.nextInt();
+			switch(select) {
+			case 1:
+				System.out.print("몇번방에 입실하시겠습니까? ");
+				int roomnum = sc.nextInt();
+				if(!rooms[roomnum-1]) {
+					System.out.println(roomnum+"번방에 입실했습니다.");
+					rooms[roomnum-1] = true;
+				}else { //if(rooms[roomnum-1]!=false) {
+					System.out.println(roomnum+"번방에는 손님이 있습니다.");
+				}
+				break;
+			case 2:
+				System.out.print("몇번방에서 퇴실하시겠습니까? ");
+				int roomnum2 = sc.nextInt();
+				if(rooms[roomnum2-1]) {
+					System.out.println(roomnum2+"번방에서 퇴실했습니다.");
+					rooms[roomnum2-1] = false;
+				}else { // if(rooms[roomnum2-1]!=true) {
+					System.out.println(roomnum2+"번방은 빈방입니다.");
+				}
+				break;
+			case 3:
+				for(int i=0;i<10;i++) {
+					if(rooms[i]==false) {
+						System.out.println((i+1)+"번방은 빈방입니다.");
+					}else {
+						System.out.println((i+1)+"번방에는 손님이 있습니다.");
+					}
+				}
+				break;
+			case 4:
+				power = false;
+				break;
+			}
+			
+		}
+		
 		
 	}
 }
