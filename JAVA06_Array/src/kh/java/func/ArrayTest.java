@@ -1,5 +1,6 @@
 package kh.java.func;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class ArrayTest {
@@ -165,7 +166,7 @@ public class ArrayTest {
 				}
 				break;
 			case 3:
-				for(int i=0;i<10;i++) {
+				for(int i=0;i<rooms.length;i++) {
 					if(rooms[i]==0) {
 						System.out.println((i+1)+"번방은 빈방입니다.");
 					}else {
@@ -217,7 +218,7 @@ public class ArrayTest {
 				break;
 			case 3:
 				for(int i=0;i<10;i++) {
-					if(rooms[i]==false) {
+					if(!rooms[i]) {
 						System.out.println((i+1)+"번방은 빈방입니다.");
 					}else {
 						System.out.println((i+1)+"번방에는 손님이 있습니다.");
@@ -228,10 +229,192 @@ public class ArrayTest {
 				power = false;
 				break;
 			}
+		}
+	}
+	public void exam6() {
+		Scanner sc = new Scanner(System.in);
+		int[] num = new int[5];
+		for(int i=0;i<num.length;i++) {
+			System.out.print((i+1)+"번째 숫자 입력 : ");
+			num[i] = sc.nextInt();
+		}
+		//배열의 0번째 칸이랑 배열의 1번째 칸의 데이터를 비교해서 0번째 칸이 더크면
+		int l = num.length;
+		
+		for(int i=0;i<l-1;i++) {
+			for(int j=0;j<l-1-i;j++) {
+				if(num[j] > num[j+1]) {
+					int tmp = num[j];
+					num[j] = num[j+1];
+					num[j+1] = tmp;
+				}
+			}
+		}
+		/*
+		for(int i=0;i<l-1;i++) {
+			if(num[i] > num[i+1]) {
+				int tmp = num[i];
+				num[i] = num[i+1];
+				num[i+1] = tmp;
+			}
+		}
+		for(int i=0;i<l-2;i++) {
+			if(num[i] > num[i+1]) {
+				int tmp = num[i];
+				num[i] = num[i+1];
+				num[i+1] = tmp;
+			}	
+		}
+		for(int i=0;i<l-3;i++) {
+			if(num[i] > num[i+1]) {
+				int tmp = num[i];
+				num[i] = num[i+1];
+				num[i+1] = tmp;
+			}	
+		}
+		for(int i=0;i<l-4;i++) {
+			if(num[i] > num[i+1]) {
+				int tmp = num[i];
+				num[i] = num[i+1];
+				num[i+1] = tmp;
+			}	
+		}
+		*/
+		/*
+		if(num[0] > num[1]) {
+			int tmp = num[0];
+			num[0] = num[1];
+			num[1] = tmp;
+		}
+		if(num[1] > num[2]) {
+			int tmp = num[1];
+			num[1] = num[2];
+			num[2] = tmp;
+		}
+		if(num[2] > num[3]) {
+			int tmp = num[2];
+			num[2] = num[3];
+			num[3] = tmp;
+		}
+		*/
+		//출력
+		for(int i=0;i<l;i++) {
+			System.out.print(num[i]+"\t");
+		}
+		//System.out.printf("%d %d %d %d %d",num[0],num[1],num[2],num[3],num[4]);
+		
+	}//exam6 클래스 종료
+	
+	public void lotto() {
+		Scanner sc = new Scanner(System.in);
+		Random r = new Random();
+		System.out.println("========== 로또 프로그램 ==========");
+		int[] userNum = new int[6];
+		//사용자 번호를 입력받기
+		for(int i=0;i<userNum.length;i++) {
+			System.out.print((i+1)+"번째 번호 입력 : ");
+			int num = sc.nextInt();
+			//로또번호는 입력값에 제약
+			//1) 입력한 숫자가 1~45의 숫자여야 함
+			//2) 입력한 숫자가 중복되면 안됨
+			//위 두 조건을 만족하면 배열에 데이터를 삽입
+			//두 조건은 순서가 존재(정상범위 숫자여야 중복가능성이 생기므로)
+			if(num <= 45 && num >= 1) {
+				//1) 제약사항 통과
+				//2) 제약검사
+				boolean check = true;
+				for(int j=0;j<i;j++) {
+					if(num == userNum[j]) {
+						check = false;
+						System.out.println("이미 중복된 번호입니다.");
+						i--;
+						break;//중복숫자를 찾으면 그 이후 검사는 의미가 없으므로 중복체크 반복문을 종료
+					}
+				}
+				if(check) {
+					userNum[i] = num;
+				}
+			}else {
+				//1) 제약사항에 위배
+				System.out.println("1~45 범위의 숫자를 입력하세요.");
+				i--;
+			}	
+		}
+		int[] comNum = new int[6]; // 로또 당첨번호 배열 생성
+		for(int i=0;i<comNum.length;i++) {
+			int num = r.nextInt(45) + 1;
+			boolean check = true;
+			for(int j=0;j<i;j++) {
+				if(num == comNum[j]) {
+					check = false;
+					i--;
+					break;
+				}
+			}
+			if(check) {
+				comNum[i] = num;
+			}
+		}	
+		//사람 숫자 정렬
+		int un = userNum.length;
+		for(int i=0;i<un-1;i++) {
+			for(int j=0;j<un-1-i;j++) {
+				if(userNum[j] > userNum[j+1]) {
+					int tmp = userNum[j];
+					userNum[j] = userNum[j+1];
+					userNum[j+1] = tmp;
+				}
+			}
+		}
+		//컴퓨터 번호 정렬
+		int cn = comNum.length;
+		for(int i=0;i<cn-1;i++) {
+			for(int j=0;j<cn-1-i;j++) {
+				if(comNum[j] > comNum[j+1]) {
+					int tmp = comNum[j];
+					comNum[j] = comNum[j+1];
+					comNum[j+1] = tmp;
+				}
+			}
+		}
+		//최종출력
+		System.out.println("최종 결과");
+		System.out.print("사용자 번호 : ");
+		for(int i=0;i<userNum.length;i++) {
+			System.out.print(userNum[i]+" ");
+		}
+		System.out.println();
+		System.out.print("당첨 번호 : ");
+		for(int i=0;i<comNum.length;i++) {
+			System.out.print(comNum[i]+" ");
+		}
+		System.out.println();
+		//맞은 번호 수 체크
+		int count = 0;
+		for(int i=0;i<userNum.length;i++) {
+			for(int j=0;j<comNum.length;j++) {
+				if(userNum[i] == comNum[j]) {
+					count++;
+					break;
+				}
+			}
+		}
+		System.out.println("맞은 갯수 : "+count);
+		switch(count) {
+		case 6:
+			System.out.println("1등!");
+			break;
+		case 5:
+			System.out.println("2등!!");
+			break;
+		case 4:
+			System.out.println("3등!!!!");
+			break;
+		default:
+			System.out.println("꽝!!!!!!!!!!!!!!!!!");
+			break;
 			
 		}
-		
-		
 	}
 }
 
