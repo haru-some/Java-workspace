@@ -6,7 +6,7 @@ public class Start {
 
 	public static void main(String[] args) {
 		TestClass tc = new TestClass();
-		tc.test5();
+		tc.test2();
 
 	}
 
