@@ -356,6 +356,8 @@ public class ArrayTest {
 			}
 		}	
 		//사람 숫자 정렬
+		bubbleSort(userNum);
+		/*
 		int un = userNum.length;
 		for(int i=0;i<un-1;i++) {
 			for(int j=0;j<un-1-i;j++) {
@@ -366,7 +368,10 @@ public class ArrayTest {
 				}
 			}
 		}
+		*/
 		//컴퓨터 번호 정렬
+		bubbleSort(comNum);
+		/*
 		int cn = comNum.length;
 		for(int i=0;i<cn-1;i++) {
 			for(int j=0;j<cn-1-i;j++) {
@@ -377,6 +382,7 @@ public class ArrayTest {
 				}
 			}
 		}
+		*/
 		//최종출력
 		System.out.println("최종 결과");
 		System.out.print("사용자 번호 : ");
@@ -414,6 +420,18 @@ public class ArrayTest {
 			System.out.println("꽝!!!!!!!!!!!!!!!!!");
 			break;
 			
+		}
+	}
+	
+	public void bubbleSort(int[] arr) {
+		for(int i=0;i<arr.length-1;i++) {
+			for(int j=0;j<arr.length-1-i;j++) {
+				if(arr[j] > arr[j+1]) {
+					int tmp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = tmp;
+				}
+			}
 		}
 	}
 }
