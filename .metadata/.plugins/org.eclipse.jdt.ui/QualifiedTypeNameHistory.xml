@@ -18,7 +18,10 @@
     <fullyQualifiedTypeName name="kh.java.func.ArrayTest2"/>
     <fullyQualifiedTypeName name="kh.java.func.ExamClass"/>
     <fullyQualifiedTypeName name="kh.java.test1.MethodTest1"/>
+    <fullyQualifiedTypeName name="kh.java.test2.TV"/>
+    <fullyQualifiedTypeName name="kh.java.test3.NewTV"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="kh.java.test2.TV"/>
+    <fullyQualifiedTypeName name="kr.co.iei.student.controller.StudentController"/>
+    <fullyQualifiedTypeName name="kr.co.iei.student.vo.Student"/>
 </qualifiedTypeNameHistroy>
