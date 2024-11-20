@@ -20,8 +20,10 @@
     <fullyQualifiedTypeName name="kh.java.test1.MethodTest1"/>
     <fullyQualifiedTypeName name="kh.java.test2.TV"/>
     <fullyQualifiedTypeName name="kh.java.test3.NewTV"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="kr.co.iei.student.controller.StudentController"/>
     <fullyQualifiedTypeName name="kr.co.iei.student.vo.Student"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Silver"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointController"/>
 </qualifiedTypeNameHistroy>
