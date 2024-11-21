@@ -23,7 +23,11 @@
     <fullyQualifiedTypeName name="kr.co.iei.student.controller.StudentController"/>
     <fullyQualifiedTypeName name="kr.co.iei.student.vo.Student"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Silver"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Gold"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Vip"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointController"/>
+    <fullyQualifiedTypeName name="javax.naming.directory.SearchResult"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.SearchResult"/>
 </qualifiedTypeNameHistroy>
