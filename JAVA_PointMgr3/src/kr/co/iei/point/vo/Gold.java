@@ -1,6 +1,6 @@
 package kr.co.iei.point.vo;
 
-public class Gold extends Silver{
+public class Gold extends Grade{
 
 	public Gold() {
 		super();
@@ -11,9 +11,12 @@ public class Gold extends Silver{
 		super(grade, name, point);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	@Override
 	public double getBonus() {
-		return 0.07*getPoint();
+		// TODO Auto-generated method stub
+		return getPoint()*0.05;
 	}
+	
+	
 }

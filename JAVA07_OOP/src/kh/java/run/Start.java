@@ -3,10 +3,41 @@ package kh.java.run;
 import kh.java.test1.MethodTest1;
 import kh.java.test2.TV;
 import kh.java.test3.NewTV;
+import kh.java.test4.Aclass;
+import kh.java.test4.AnimalMgr;
+import kh.java.test4.Bclass;
+import kh.java.test5.TestClass1;
+import kh.java.test6.CalcFront;
 
 public class Start {
 
 	public static void main(String[] args) {
+		CalcFront cf = new CalcFront();
+		cf.view();
+	}
+		
+		
+		/*
+		
+		//TestClass1 tc1 = TestClass1();
+		
+		AnimalMgr am = new AnimalMgr();
+		am.main();
+		
+		
+		AnimalMgr amgr = new AnimalMgr();
+		amgr.main();
+		
+		
+		
+		Aclass a = new Aclass();
+		a.print();
+		Bclass b = new Bclass();
+		b.print();
+		
+		
+		
+		
 		NewTV tv1 = new NewTV(100);
 		//현재 볼륨을 출력하고 싶으면
 		//System.out.println(tv1.volume);//volume변수가 private이어서 접근 불가능
@@ -21,6 +52,7 @@ public class Start {
 		
 		int inch = tv1.getInch();
 		System.out.println("내 TV의 크기 : "+inch);
+		*/
 		
 		/*
 		TV tv1 = new TV();
@@ -42,7 +74,5 @@ public class Start {
 		System.out.println("TV3 시작");
 		tv3.tvStart();
 		*/
-		
-	}
 
 }
