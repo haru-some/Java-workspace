@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="kh.java.func.LoopTest"/>
     <fullyQualifiedTypeName name="kh.java.func.RandomTest"/>
     <fullyQualifiedTypeName name="kh.java.func.ArrayTest"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="kh.java.func.ArrayTest2"/>
     <fullyQualifiedTypeName name="kh.java.func.ExamClass"/>
     <fullyQualifiedTypeName name="kh.java.test1.MethodTest1"/>
@@ -36,10 +35,21 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Gold"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Vip"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Grade"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointControllerImpl"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Silver"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Vvip"/>
+    <fullyQualifiedTypeName name="java.lang.Cloneable"/>
+    <fullyQualifiedTypeName name="kh.java.func.TestClass1"/>
+    <fullyQualifiedTypeName name="kh.java.func.StringTest"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="kh.java.func.ObjectTest"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="kh.java.func.ApiTest"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 </qualifiedTypeNameHistroy>

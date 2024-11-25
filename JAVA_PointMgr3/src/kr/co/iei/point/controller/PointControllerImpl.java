@@ -150,7 +150,7 @@ public class PointControllerImpl implements PointController {
 			System.out.println("회원 정보를 찾을 수 없습니다.");
 		}else {
 			//Grade g = members[searchIndex];
-			System.out.print("수정 할 회원 등급 입력[silver/gold/vip] : ");
+			System.out.print("수정 할 회원 등급 입력[silver/gold/vip/vvip] : ");
 			String grade = sc.next();
 			System.out.print("수정 할 회원 포인트 입력 : ");
 			int point = sc.nextInt();
@@ -159,20 +159,18 @@ public class PointControllerImpl implements PointController {
 			
 			switch(grade) {
 			case "silver":
-				Silver gra1 = new Silver(grade, name, point);
-				members[searchIndex] = gra1;
+				Silver s = new Silver(grade, name, point);
+				Grade g = (Grade)s; //업캐스팅은 자동으로 가능
+				members[searchIndex] = g;
 				break;
 			case "gold":
-				Gold gra2 = new Gold(grade, name, point);
-				members[searchIndex] = gra2;
+				members[searchIndex] = new Gold(grade, name, point);
 				break;
 			case "vip":
-				Vip gra3 = new Vip(grade, name, point);
-				members[searchIndex] = gra3;
+				members[searchIndex] = new Vip(grade, name, point);
 				break;
 			case "vvip":
-				Vvip gra4 = new Vvip(grade, name, point);
-				members[searchIndex] = gra4;
+				members[searchIndex] = new Vvip(grade, name, point);
 				break;
 			}
 			
