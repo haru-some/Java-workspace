@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="kr.or.iei.vo.Information"/>
-    <fullyQualifiedTypeName name="kh.java.func.TestClass"/>
     <fullyQualifiedTypeName name="kh.java.func.ScanTest"/>
     <fullyQualifiedTypeName name="kh.java.function.Example"/>
     <fullyQualifiedTypeName name="kh.java.practice.Sample"/>
@@ -41,15 +40,17 @@
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Vvip"/>
     <fullyQualifiedTypeName name="java.lang.Cloneable"/>
     <fullyQualifiedTypeName name="kh.java.func.TestClass1"/>
-    <fullyQualifiedTypeName name="kh.java.func.StringTest"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="kh.java.func.ObjectTest"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="kh.java.func.ApiTest"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="kh.java.func.StringTest"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="kh.java.func.TestClass"/>
 </qualifiedTypeNameHistroy>

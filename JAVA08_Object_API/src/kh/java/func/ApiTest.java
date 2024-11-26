@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
+import java.util.Scanner;
 
 public class ApiTest {
 	public void math() {
@@ -150,4 +151,153 @@ public class ApiTest {
 				+":"+day1.get(Calendar.SECOND);
 		System.out.println(str4);
 	}
+	public void dday() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("========== D-DAY 계산기 ==========");
+		System.out.print("D-DAY [년도] 입력 : ");
+		int year = sc.nextInt();
+		System.out.print("D-DAY [월] 입력 : ");
+		int month = sc.nextInt();
+		System.out.print("D-DAY [일] 입력 : ");
+		int date = sc.nextInt();
+		
+		Date todayDate = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
+		String todayString = sdf.format(todayDate);
+		System.out.println("오늘 날짜 : "+todayString);
+		
+		Calendar dday = Calendar.getInstance();
+		dday.set(year, month-1, date);
+		//dday.set(Calendar.YEAR, year);
+		//dday.set(Calendar.MONTH, month-1);
+		//dday.set(Calendar.DATE, date);
+		
+		long ddayMs = dday.getTimeInMillis();
+		Date ddayDate = new Date(dday.getTimeInMillis());
+		String ddayString = sdf.format(ddayDate);
+				
+		System.out.println("dday 날짜 : "+ddayString);
+		
+		Calendar today = Calendar.getInstance();
+		long todayMs = today.getTimeInMillis();
+		
+		long time = ddayMs-todayMs;
+		long interDay = time/(24*60*60*1000);
+		if(time > 0) {
+			System.out.println(interDay+"일 남았습니다.");
+		}else if(time < 0) {
+			System.out.println(Math.abs(interDay)+"일 지났습니다.");
+		}else {
+			System.out.println("D-Day 입니다.");
+		}
+			
+	}
+	public void ddayTeacher() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("========== D-DAY 계산기 ==========");
+		System.out.print("D-DAY [년도] 입력 : ");
+		int year = sc.nextInt();
+		System.out.print("D-DAY [월] 입력 : " );
+		int month = sc.nextInt();
+		System.out.print("D-DAY [일] 입력 : ");
+		int date = sc.nextInt();
+		Calendar today = Calendar.getInstance();
+
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
+		
+		long todayMs = today.getTimeInMillis();
+		Date todayDate = new Date(todayMs);
+		
+		String todayString = sdf.format(todayDate);
+		//Calendar dday = Calendar.getInstance();
+		/*
+		dday.set(Calendar.YEAR, year);
+		dday.set(Calendar.MONTH, month-1);
+		dday.set(Calendar.DATE, date);
+		*/
+		today.set(year, month-1, date);
+		long ddayMs = today.getTimeInMillis();
+		Date ddayDate = new Date(ddayMs);
+		String ddayString = sdf.format(ddayDate);
+		
+		System.out.println("todayMs : "+todayMs);
+		System.out.println("ddayMs : "+ddayMs);
+		
+		
+		System.out.println("오늘 날짜 : " +todayString);
+		System.out.println("dday 날짜 : "+ddayString);
+		//두 날짜 사이에 몇 ms가 지났는지 계산
+		long time = ddayMs - todayMs;
+		long interDay = time/(1000*60*60*24);
+		if(time > 0) {
+			System.out.println(interDay+"일 남았습니다.");
+		}else if(time < 0) {
+			System.out.println(Math.abs(interDay)+"일 지났습니다.");
+		}else {
+			System.out.println("D-Day 입니다.");
+		}
+		
+	}
+	
+	public void wrap1() {
+		//Wrapper클래스 : 기본자료형을 참조형으로 사용할 수 있도록 포장하는 클래스
+		//정수형 변수 선언 후 10 대입
+		int num1 = 10;
+		//Wrapper가 필요한경우 (int -> Integer)
+		Integer num2 = new Integer(10);//기본형을 참조형으로 포장 -> boxing
+		int num3 = num2.intValue();//wrapper로 감싸진 데이터를 다시 기본형으로 변환 -> unboxing
+		
+		//실수형 변수 선언 후 3.14 대입
+		double d1 = 3.14;
+		//Wrapper 사용 (double -> Double)
+		Double d2 = new Double(3.14);//boxing
+		double d3 = d2.doubleValue();
+		
+		//auto-boxing, auto-unboxing
+		int num11 = 100;
+		Integer num12 = 100;
+		int num13 = num12;
+		
+		double d11 = 3.14;
+		Double d12 = 3.14;
+		double d13 = d12;
+	}
+	
+	public void wrap2() {
+		//wrapper 클래스 사용하는 경우     기본형 <-> 문자열 데이터 변환
+		//1) 문자열로 되어있는 데이터를 기본자료형으로 변환하고 싶을 때
+		String str1 = "100";
+		System.out.println(str1+1);
+		//변경하고 싶은 기본자료형의 wrapper클래스를 사용
+		int num1 = Integer.parseInt(str1);
+		System.out.println(num1+1);
+		
+		String str2 = "3.14";
+		double d1 = Double.parseDouble(str2);
+		System.out.println(d1+1);
+		
+		/*
+		//정상적으로 변환이 불가능한 문자열값을 변환하려고하면 에러가 발생
+		String str3 = "100a";
+		int num2 = Integer.parseInt(str3);
+		System.out.println(num2);
+		*/
+		//문자열 -> 문자
+		String str4 = "ABCD";
+		char ch = str4.charAt(0);
+		
+		//2) 기본자료형을 문자열로 바꾸는 경우
+		int num2 = 100;
+		double d2 = 3.14;
+		//2-1) wrapper클래스 사용하는 방법
+		String str5 = Integer.valueOf(num2).toString();
+		String str6 = Double.valueOf(d2).toString();
+		System.out.println(str5);
+		System.out.println(str6);
+		//2-2) String클래스 사용하는 방법
+		String str7 = String.valueOf(num2);
+		String str8 = String.valueOf(d2);
+		
+	}
+
 }
