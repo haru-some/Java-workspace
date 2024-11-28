@@ -17,13 +17,16 @@ public class PointControllerImpl implements PointContoller {
 		super();
 		sc = new Scanner(System.in);
 		members = new ArrayList<Grade>();
-	
+		
+		members.add(new Silver("silver", "회원1", 1000));
+		members.add(new Gold("gold", "회원2", 1000));
+		members.add(new Vip("vip", "회원3", 1000));
 	}
 
 	@Override
 	public void main() {
 		while(true) {
-			System.out.println("\n---------- 포인트 관리 프로그램v2 ----------\n");
+			System.out.println("\n---------- 포인트 관리 프로그램v4 ----------\n");
 			System.out.println("1. 회원 정보 등록");
 			System.out.println("2. 전체 회원 조회");
 			System.out.println("3. 회원 1명 출력");
@@ -70,20 +73,20 @@ public class PointControllerImpl implements PointContoller {
 		
 		switch(grade) {
 		case "silver":
-			Grade s = new Silver(grade, name, point);
+			Silver s = new Silver(grade, name, point);
 			members.add(s);
 			break;
 		case "gold":
-			Grade g = new Gold(grade, name, point);
+			Gold g = new Gold(grade, name, point);
 			members.add(g);
 			break;
 		case "vip":
-			Grade v = new Vip(grade, name, point);
+			Vip v = new Vip(grade, name, point);
 			members.add(v);
 			break;
 		case "vvip":
-			Grade vv = new Vvip(grade, name, point);
-			members.add(vv);
+			Vvip vv = new Vvip(grade, name, point);
+			members.add(vv);    //오버라이드된 메소드가 실행
 			break;
 		default:
 			System.out.println("회원 등급을 잘못 입력하였습니다.");
@@ -100,6 +103,12 @@ public class PointControllerImpl implements PointContoller {
 		for(Grade g : members) {
 			System.out.printf(g.getGrade()+"\t"+g.getName()+"\t"+g.getPoint()+"\t%.1f\n",g.getBonus());
 		}
+		/*
+		for(int i=0;i<members.size();i++) {
+			Grade g = members.get(i);
+			System.out.printf(g.getGrade()+"\t"+g.getName()+"\t"+g.getPoint()+"\t%.1f\n",g.getBonus());
+		}
+		*/
 	}
 
 	@Override
@@ -136,19 +145,19 @@ public class PointControllerImpl implements PointContoller {
 			
 			switch(grade) {
 			case "silver":
-				Grade s = new Silver(grade, name, point);
+				Silver s = new Silver(grade, name, point);
 				members.set(searchIndex, s);
 				break;
 			case "gold":
-				Grade g = new Gold(grade, name, point);
+				Gold g = new Gold(grade, name, point);
 				members.set(searchIndex, g);
 				break;
 			case "vip":
-				Grade v = new Vip(grade, name, point);
+				Vip v = new Vip(grade, name, point);
 				members.set(searchIndex, v);
 				break;
 			case "vvip":
-				Grade vv = new Vvip(grade, name, point);
+				Vvip vv = new Vvip(grade, name, point);
 				members.set(searchIndex, vv);
 				break;
 			}

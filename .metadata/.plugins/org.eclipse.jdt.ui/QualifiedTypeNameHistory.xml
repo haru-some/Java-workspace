@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kh.java.func.ExamClass"/>
     <fullyQualifiedTypeName name="kh.java.test1.MethodTest1"/>
     <fullyQualifiedTypeName name="kh.java.test2.TV"/>
     <fullyQualifiedTypeName name="kh.java.test3.NewTV"/>
@@ -48,16 +47,17 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="kh.java.func.TestClass"/>
     <fullyQualifiedTypeName name="kh.java.func.NewArray"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="kh.java.func.ListTest"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="kh.co.iei.student.vo.Student"/>
     <fullyQualifiedTypeName name="kh.co.iei.student.controller.StudentController"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointContoller"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Grade"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointControllerImpl"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="kh.java.func.ListExam"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

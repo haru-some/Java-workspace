@@ -28,7 +28,7 @@ public class PointControllerImpl implements PointController {
 	@Override
 	public void main() {
 		while(true) {
-			System.out.println("\n---------- 포인트 관리 프로그램v2 ----------\n");
+			System.out.println("\n---------- 포인트 관리 프로그램v3 ----------\n");
 			System.out.println("1. 회원 정보 등록");
 			System.out.println("2. 전체 회원 조회");
 			System.out.println("3. 회원 1명 출력");
