@@ -1,7 +1,13 @@
 package kh.java.func;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
 
 public class ArrayTest {
 	public void test1() {
@@ -434,6 +440,81 @@ public class ArrayTest {
 			}
 		}
 	}
+	
+	public void lottolist() {
+		Scanner sc = new Scanner(System.in);
+		Random r = new Random();
+		System.out.println("========== 로또 프로그램 ==========");
+		Set<Integer> userNum = new HashSet<Integer>();
+		Set<Integer> comNum = new HashSet<Integer>();
+		while(userNum.size() < 6) {
+			System.out.print((userNum.size()+1)+"번째 번호 입력 : ");
+			int num = sc.nextInt();
+			if(num <= 45 && num >= 1) {
+				if(!userNum.add(num)) {
+					System.out.println("이미 중복된 번호입니다.");
+				}
+			}else{
+				System.out.println("1~45 범위의 숫자를 입력하세요.");
+			}	
+		}
+		while(comNum.size() < 6) {
+			comNum.add(r.nextInt(45) + 1);
+		}
+		List<Integer> sortedUserNum = new ArrayList<Integer>(userNum);
+		List<Integer> sortedComNum = new ArrayList<Integer>(comNum);
+		
+		Collections.sort(sortedUserNum);
+		Collections.sort(sortedComNum);
+		
+		System.out.println("최종 결과");
+		System.out.println("사용자 번호 : "+sortedUserNum);
+		System.out.println("당첨 번호 : "+sortedComNum);
+		
+		Set<Integer> machingNumbers = new HashSet<Integer>(userNum);
+		machingNumbers.retainAll(comNum);
+		int count = machingNumbers.size();
+		
+		/*
+		for(int uNum : userNum) {
+			boolean result = comNum.add(uNum);
+			if(!result) {
+				count++;
+			}
+		}
+		
+		for(int i=0;i<userNum.size();i++) {
+			int uNum = ((List<Integer>) userNum).get(i);
+			if(((List<Integer>) comNum).indexOf(uNum) != -1) {
+				count++;
+			}
+		}
+		
+		for(int uNum : userNum) {
+			if(comNum.contains(uNum)) {
+				count++;
+			}
+		}
+		*/
+		
+		System.out.println("맞은 갯수 : "+count);
+		switch(count) {
+		case 6:
+			System.out.println("1등!");
+			break;
+		case 5:
+			System.out.println("2등!!");
+			break;
+		case 4:
+			System.out.println("3등!!!!");
+			break;
+		default:
+			System.out.println("꽝!!!!!!!!!!!!!!!!!");
+			break;
+			
+		}
+	}
+	
 }
 
 
