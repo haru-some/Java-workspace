@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kh.java.test4.AnimalMgr"/>
-    <fullyQualifiedTypeName name="kh.java.test5.TestClass1"/>
-    <fullyQualifiedTypeName name="kh.java.test6.CalcTest"/>
-    <fullyQualifiedTypeName name="kh.java.test6.CalcFront"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Gold"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Vip"/>
@@ -40,7 +36,6 @@
     <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointContoller"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Grade"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointControllerImpl"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="kh.java.func.ListExam"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="kr.or.iei.func.Exam"/>
@@ -55,9 +50,14 @@
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kh.co.iei.student.vo.Student"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="kh.co.iei.student.controller.StudentController"/>
+    <fullyQualifiedTypeName name="kh.java.func.ByteStreamTest"/>
+    <fullyQualifiedTypeName name="kh.java.func.CharStream"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 </qualifiedTypeNameHistroy>
