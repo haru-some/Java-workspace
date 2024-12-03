@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kh.java.func.AnimalMgr2"/>
-    <fullyQualifiedTypeName name="kh.java.func.Rabbit"/>
-    <fullyQualifiedTypeName name="kh.java.func.AnimalMgr3"/>
     <fullyQualifiedTypeName name="kh.java.func.ExceptionTest"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
@@ -25,7 +22,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="kh.co.iei.student.vo.Student"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="kh.co.iei.student.controller.StudentController"/>
     <fullyQualifiedTypeName name="kh.java.func.ByteStreamTest"/>
     <fullyQualifiedTypeName name="kh.java.func.CharStream"/>
@@ -51,13 +47,17 @@
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointController"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.iei.point.dao.PointDao"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Grade"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Silver"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Gold"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Vip"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="kr.co.iei.point.vo.Grade"/>
 </qualifiedTypeNameHistroy>
