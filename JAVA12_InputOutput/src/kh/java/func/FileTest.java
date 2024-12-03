@@ -69,4 +69,56 @@ public class FileTest {
 			}
 		}
 	}
+	
+	public void test3() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("저장 할 파일명 입력 : ");
+		String filename = sc.nextLine();
+		//test.txt라고 입력했다고 가정
+		//test        .txt 로 분리
+		//원본파일 이름에서 제일 뒤에있는 . 앞까지를 문자열로 가져옴 -> test
+		String onlyFilename = filename.substring(0,filename.lastIndexOf("."));
+		//원본파일이름에서 제일 뒤에있는 .부터 끝까지를 문자열로 가져옴 -> .txt
+		String extention = filename.substring(filename.lastIndexOf("."));
+		
+		//파일명 중복처리를 위한 변수
+		String filepath = null;
+		//중복된 파일명이 있으면 뒤에 붙일 숫자 변수
+		int count = 0;
+		while(true) {
+			if(count == 0) {
+				//중복검사 첫번째 -> 원본파일명 그대로(숫자붙이지 않은 상태)
+				filepath = filename;
+			}else {
+				//두번째부터는 이미 중복된 파일이름이 있으므로 숫자를 붙인걸로 처리
+				filepath = onlyFilename+"_"+count+extention;
+			}
+			System.out.println(filepath);
+			//우리가 설정한 파일이름이 존재하는지 체크
+			File file = new File("test/"+filepath);
+			if(!file.exists()) {//존재하지 않을경우(중복된 이름이 아닌경우) 반복문 종료
+				break;
+			}
+			count++;
+		}
+		
+		FileOutputStream fos = null;
+		
+		try {
+			fos = new FileOutputStream("test/"+filepath);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				fos.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		
+	}
 }
