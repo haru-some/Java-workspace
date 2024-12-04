@@ -15,7 +15,7 @@ public class Vip extends Grade{
 	@Override
 	public double getBonus() {
 		// TODO Auto-generated method stub
-		return Math.floor(getBonus()*0.07);
+		return Math.floor(getPoint()*0.07);
 	}
 	
 }

@@ -1,6 +1,8 @@
 package kr.co.iei.point.vo;
 
-public abstract class Grade {
+import java.io.Serializable;
+
+public abstract class Grade implements Serializable {
 	private String grade;
 	private String name;
 	private int point;
