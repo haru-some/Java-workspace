@@ -1,0 +1,49 @@
+package kh.java.func;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class BaseballClient {
+	public void client() {
+		Scanner sc = new Scanner(System.in);
+		String serverIp = "192.168.10.61";
+		int serverPort = 7777;
+		
+		Socket socket = null;
+		DataOutputStream dos = null;
+		DataInputStream dis = null;
+		
+		int count = 0;
+		
+		try {
+			socket = new Socket(serverIp, serverPort);
+			System.out.println("<<<<< Baseball Game >>>>>");
+			System.out.println("<<<<< Game Start >>>>>");
+			
+			OutputStream out = socket.getOutputStream();
+			InputStream in = socket.getInputStream();
+			
+			dos = new DataOutputStream(out);
+			dis = new DataInputStream(in);
+			
+			while(true) {
+				System.out.print(count+1+"번째 숫자 입력 : ");
+				int clientNum = sc.nextInt();
+				
+				//String serverMsg = dis.readUTF();
+				
+				
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

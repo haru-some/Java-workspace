@@ -1,0 +1,7 @@
+package kh.java.func;
+
+public class UdpClient {
+	public void client() {
+		
+	}
+}

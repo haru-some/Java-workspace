@@ -1,0 +1,13 @@
+package kh.java.func;
+
+import java.util.Scanner;
+
+public class BaseballClientT {
+	public void client() {
+		Scanner sc = new Scanner(System.in);
+		String serverIp = "127.0.0.1";
+		int serverPort = 8989;
+		
+		
+	}
+}

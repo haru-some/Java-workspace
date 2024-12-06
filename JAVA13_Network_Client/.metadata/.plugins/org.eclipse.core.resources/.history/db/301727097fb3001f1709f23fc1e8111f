@@ -1,0 +1,13 @@
+package kh.java.func;
+
+import java.net.DatagramSocket;
+
+public class UdpClient {
+	public void client() {
+		//1. 서버포트 지정
+		int serverPort = 8888;
+		//자원반환할 객체 미리 선언
+		DatagramSocket socket = null;
+		
+	}
+}

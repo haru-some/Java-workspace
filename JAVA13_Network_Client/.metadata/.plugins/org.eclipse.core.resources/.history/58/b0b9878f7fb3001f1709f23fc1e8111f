@@ -1,0 +1,27 @@
+package kh.java.func;
+
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class UdpClient {
+	public void client() {
+		//1. 서버포트 지정
+		int serverPort = 8888;
+		//자원반환할 객체 미리 선언
+		DatagramSocket socket = null;
+		
+		try {
+			//2. DatagramSocket객체 생성
+			//클라이언트는 포트열고 요청을 기다리는게 아니므로 포트번호를 생성자에 추가하지 않음
+			socket = new DatagramSocket();
+			//전송할 데이터 생성
+			String msg = "난 UDP 클라이언트야";
+			byte[] outMsg = msg.getBytes();
+			
+			
+		} catch (SocketException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

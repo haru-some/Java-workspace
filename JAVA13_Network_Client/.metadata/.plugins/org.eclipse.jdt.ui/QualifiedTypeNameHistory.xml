@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+    <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="kh.java.func.UdpClient"/>
+    <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
+    <fullyQualifiedTypeName name="kh.java.func.BaseballClient"/>
+    <fullyQualifiedTypeName name="java.io.ObjectStreamClass"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+    <fullyQualifiedTypeName name="kh.java.func.BaseballClientT"/>
+</qualifiedTypeNameHistroy>

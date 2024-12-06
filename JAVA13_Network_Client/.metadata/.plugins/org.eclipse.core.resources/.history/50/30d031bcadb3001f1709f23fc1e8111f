@@ -1,0 +1,10 @@
+package kh.java.func;
+
+import java.util.Scanner;
+
+public class BaseballClientT {
+	public void client() {
+		Scanner sc = new Scanner(System.in);
+		
+	}
+}

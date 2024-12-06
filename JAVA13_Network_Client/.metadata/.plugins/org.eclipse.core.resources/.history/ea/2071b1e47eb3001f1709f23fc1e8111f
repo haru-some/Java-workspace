@@ -1,0 +1,8 @@
+package kh.java.func;
+
+public class UdpClient {
+	public void client() {
+		//1. 서버포트 지정
+		int serverPort = 8888;
+	}
+}
