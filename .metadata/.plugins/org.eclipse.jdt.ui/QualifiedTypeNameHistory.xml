@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kh.java.func.NewArray"/>
-    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="kh.java.func.ListTest"/>
-    <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointContoller"/>
-    <fullyQualifiedTypeName name="kr.co.iei.point.controller.PointControllerImpl"/>
-    <fullyQualifiedTypeName name="kh.java.func.ListExam"/>
-    <fullyQualifiedTypeName name="kr.or.iei.func.Exam"/>
-    <fullyQualifiedTypeName name="kh.java.func.SetTest"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="kh.java.func.ArrayTest"/>
-    <fullyQualifiedTypeName name="kh.java.func.MapTest"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="kh.co.iei.student.vo.Student"/>
     <fullyQualifiedTypeName name="kh.co.iei.student.controller.StudentController"/>
     <fullyQualifiedTypeName name="kh.java.func.ByteStreamTest"/>
     <fullyQualifiedTypeName name="kh.java.func.CharStream"/>
@@ -38,7 +21,6 @@
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
     <fullyQualifiedTypeName name="javax.management.openmbean.OpenMBeanOperationInfo"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="kr.co.iei.student.view.StudentView"/>
     <fullyQualifiedTypeName name="kr.co.iei.student.dao.StudentDao"/>
     <fullyQualifiedTypeName name="kr.co.iei.student.controller.StudentController"/>
@@ -56,8 +38,26 @@
     <fullyQualifiedTypeName name="kr.co.iei.point.vo.Grade"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="kh.java.func.FileClient"/>
+    <fullyQualifiedTypeName name="kh.java.func.FileServer"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
+    <fullyQualifiedTypeName name="kh.java.func.UdpServer"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
+    <fullyQualifiedTypeName name="kh.java.func.BaseballServer"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kh.java.func.BaseballServerT"/>
 </qualifiedTypeNameHistroy>
